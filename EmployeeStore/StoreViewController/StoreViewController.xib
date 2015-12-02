@@ -7,16 +7,33 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoreViewController">
             <connections>
+                <outlet property="storeTableView" destination="aHS-hE-JE3" id="f0j-Ha-LUw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aHS-hE-JE3">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Xyg-pr-V84"/>
+                        <outlet property="delegate" destination="-1" id="Loj-t1-9hm"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="238" y="310"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aHS-hE-JE3" secondAttribute="trailing" id="Q2h-nN-2RZ"/>
+                <constraint firstItem="aHS-hE-JE3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="j0S-lm-OWy"/>
+                <constraint firstAttribute="bottom" secondItem="aHS-hE-JE3" secondAttribute="bottom" id="mCR-Mz-MvV"/>
+                <constraint firstItem="aHS-hE-JE3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vxH-Zf-lNo"/>
+            </constraints>
+            <point key="canvasLocation" x="-3" y="276"/>
         </view>
     </objects>
 </document>

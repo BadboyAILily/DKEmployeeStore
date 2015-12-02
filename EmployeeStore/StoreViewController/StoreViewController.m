@@ -7,8 +7,11 @@
 //
 
 #import "StoreViewController.h"
+#import "StoreInfoCell.h"
 
-@interface StoreViewController ()
+@interface StoreViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *storeTableView;
 
 @end
 
@@ -17,10 +20,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    self.storeTableView.rowHeight = 68;
 }
 
-- (void)initView{
+
+#pragma mark - UITableViewDelegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    if (indexPath.row == 0) {//门店地址和用户名
+        static  NSString  *CellIdentiferId = @"StoreInfoCellId";
+        StoreInfoCell  *storeCell = [tableView dequeueReusableCellWithIdentifier:CellIdentiferId];
+        if (storeCell == nil) {
+            storeCell = [[[NSBundle mainBundle]loadNibNamed:@"StoreInfoCell" owner:nil options:nil]lastObject];
+        };
+        storeCell.storeAddressLabel.text = @"上海";
+        storeCell.userNameLabel.text = @"邓康";
+        return storeCell;
+    }
+    return cell;
     
 }
 

@@ -46,5 +46,9 @@
     item2 = [[UIBarButtonItem alloc]initWithCustomView:grayView];
 }
 
+- (void)backToFront:(UIGestureRecognizer *)tat{
+
+}
+
 
 @end

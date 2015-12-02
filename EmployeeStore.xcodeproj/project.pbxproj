@@ -31,6 +31,8 @@
 		A49D0B001BF85B7400D3AC29 /* SetVipInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49D0AFE1BF85B7400D3AC29 /* SetVipInfoCell.xib */; };
 		A49D0B071BF8694300D3AC29 /* WebBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49D0B051BF8694300D3AC29 /* WebBaseViewController.m */; };
 		A49D0B081BF8694300D3AC29 /* WebBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49D0B061BF8694300D3AC29 /* WebBaseViewController.xib */; };
+		A4FAE73B1C0ED6AD00DD593B /* StoreInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FAE7391C0ED6AD00DD593B /* StoreInfoCell.m */; };
+		A4FAE73C1C0ED6AD00DD593B /* StoreInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FAE73A1C0ED6AD00DD593B /* StoreInfoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,9 @@
 		A49D0B041BF8694300D3AC29 /* WebBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBaseViewController.h; sourceTree = "<group>"; };
 		A49D0B051BF8694300D3AC29 /* WebBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBaseViewController.m; sourceTree = "<group>"; };
 		A49D0B061BF8694300D3AC29 /* WebBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebBaseViewController.xib; sourceTree = "<group>"; };
+		A4FAE7381C0ED6AD00DD593B /* StoreInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreInfoCell.h; sourceTree = "<group>"; };
+		A4FAE7391C0ED6AD00DD593B /* StoreInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreInfoCell.m; sourceTree = "<group>"; };
+		A4FAE73A1C0ED6AD00DD593B /* StoreInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreInfoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,9 +206,8 @@
 		A49BFFB91BF76C6700925CC6 /* StoreViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A49BFFCD1BF76D3F00925CC6 /* StoreViewController.h */,
-				A49BFFCE1BF76D3F00925CC6 /* StoreViewController.m */,
-				A49BFFCF1BF76D3F00925CC6 /* StoreViewController.xib */,
+				A4FAE7371C0ED66900DD593B /* View */,
+				A4FAE7361C0ED63A00DD593B /* StoreController */,
 			);
 			path = StoreViewController;
 			sourceTree = "<group>";
@@ -284,6 +288,26 @@
 				A49D0B061BF8694300D3AC29 /* WebBaseViewController.xib */,
 			);
 			path = WebBase;
+			sourceTree = "<group>";
+		};
+		A4FAE7361C0ED63A00DD593B /* StoreController */ = {
+			isa = PBXGroup;
+			children = (
+				A49BFFCD1BF76D3F00925CC6 /* StoreViewController.h */,
+				A49BFFCE1BF76D3F00925CC6 /* StoreViewController.m */,
+				A49BFFCF1BF76D3F00925CC6 /* StoreViewController.xib */,
+			);
+			name = StoreController;
+			sourceTree = "<group>";
+		};
+		A4FAE7371C0ED66900DD593B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4FAE7381C0ED6AD00DD593B /* StoreInfoCell.h */,
+				A4FAE7391C0ED6AD00DD593B /* StoreInfoCell.m */,
+				A4FAE73A1C0ED6AD00DD593B /* StoreInfoCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +400,7 @@
 				A49D0AFB1BF8572D00D3AC29 /* MineCell.xib in Resources */,
 				A49BFFC21BF76CDA00925CC6 /* MineViewController.xib in Resources */,
 				A49D0B001BF85B7400D3AC29 /* SetVipInfoCell.xib in Resources */,
+				A4FAE73C1C0ED6AD00DD593B /* StoreInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +425,7 @@
 				A49BFFD01BF76D3F00925CC6 /* StoreViewController.m in Sources */,
 				A49BFFC11BF76CDA00925CC6 /* MineViewController.m in Sources */,
 				A49D0AFF1BF85B7400D3AC29 /* SetVipInfoCell.m in Sources */,
+				A4FAE73B1C0ED6AD00DD593B /* StoreInfoCell.m in Sources */,
 				A49D0B071BF8694300D3AC29 /* WebBaseViewController.m in Sources */,
 				A49BFFB41BF764A200925CC6 /* RootViewController.m in Sources */,
 				A49BFFB81BF769B900925CC6 /* EmployeeManager.m in Sources */,
