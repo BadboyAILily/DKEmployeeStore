@@ -22,7 +22,6 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    //测试更新代码到本地
     EmployeeTabBarViewController *employeeTabBarView = [[EmployeeTabBarViewController alloc]init];
     
     self.window.rootViewController = employeeTabBarView;
