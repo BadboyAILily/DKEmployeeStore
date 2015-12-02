@@ -43,7 +43,7 @@
     [self setUpOneChildViewController:service image:[self imageNamed:@"serviceIcon"] selectedImage:[self imageNamed:@"serviceSelectedIcon"] title:@"服务"];
 
     // 3.添加第3个控制器
-    StudyViewController *study = [[StudyViewController alloc]init];
+    StudyViewController *study = [[StudyViewController alloc]initWithUrlPath:@"http://m.o2omarketing.com/HtmlApps/html/public/allsales/salesStudy.html?customerId=f6a7da3d28f74f2abedfc3ea0cf65c01"];
     [self setUpOneChildViewController:study image:[self imageNamed:@"studyIcon"] selectedImage:[self imageNamed:@"studySelectedIcon"] title:@"学习"];
     
     // 4.添加第4个控制器

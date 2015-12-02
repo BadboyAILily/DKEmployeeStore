@@ -10,4 +10,6 @@
 
 @interface StudyViewController : RootViewController
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+- (instancetype)initWithUrlPath:(NSString *)path;
 @end

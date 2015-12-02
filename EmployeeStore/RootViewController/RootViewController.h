@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UIViewController
-
+{
+    UIBarButtonItem *item1;
+    UIBarButtonItem *item2;
+}
+- (void)createBackButton;
 @end

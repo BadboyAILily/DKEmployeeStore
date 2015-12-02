@@ -8,30 +8,76 @@
 
 #import "StudyViewController.h"
 
+#define kBackButtonWidth  17
+#define kBackButtonHeight 17
+
+
 @interface StudyViewController ()
+{
+    NSString *_mainPath;
+}
 
 @end
 
 @implementation StudyViewController
 
+- (instancetype)initWithUrlPath:(NSString *)path {
+    self = [super initWithNibName:@"StudyViewController" bundle:[NSBundle mainBundle]];
+    if (self) {
+        _mainPath = path;
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self loadWebView];
+    [self createBackButton];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)loadWebView{
+    
+    NSURL *url = [NSURL URLWithString:_mainPath];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    [_webView loadRequest:req];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UIWebViewDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    NSLog(@"studyURL:%@",request.URL.absoluteString);
+    if([request.URL.absoluteString rangeOfString:@"salesStudy.html"].location != NSNotFound){
+        self.navigationItem.leftBarButtonItems = nil;
+    }else{
+        self.navigationItem.leftBarButtonItems = @[item1,item2];
+
+    }
+    return YES;
 }
-*/
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    self.navigationItem.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    
+}
+
+- (void)backToFront:(UIBarButtonItem *)sender {
+    
+    if ([self.webView canGoBack]) {
+        [self.webView goBack];
+    }
+    
+}
+
+
 
 @end
