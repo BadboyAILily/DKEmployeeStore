@@ -33,6 +33,8 @@
 		A49D0B081BF8694300D3AC29 /* WebBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A49D0B061BF8694300D3AC29 /* WebBaseViewController.xib */; };
 		A4FAE73B1C0ED6AD00DD593B /* StoreInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FAE7391C0ED6AD00DD593B /* StoreInfoCell.m */; };
 		A4FAE73C1C0ED6AD00DD593B /* StoreInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FAE73A1C0ED6AD00DD593B /* StoreInfoCell.xib */; };
+		A4FAE7451C0EFD2800DD593B /* ModuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FAE7431C0EFD2800DD593B /* ModuleCell.m */; };
+		A4FAE7461C0EFD2800DD593B /* ModuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FAE7441C0EFD2800DD593B /* ModuleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,9 @@
 		A4FAE7381C0ED6AD00DD593B /* StoreInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreInfoCell.h; sourceTree = "<group>"; };
 		A4FAE7391C0ED6AD00DD593B /* StoreInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreInfoCell.m; sourceTree = "<group>"; };
 		A4FAE73A1C0ED6AD00DD593B /* StoreInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreInfoCell.xib; sourceTree = "<group>"; };
+		A4FAE7421C0EFD2800DD593B /* ModuleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleCell.h; sourceTree = "<group>"; };
+		A4FAE7431C0EFD2800DD593B /* ModuleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleCell.m; sourceTree = "<group>"; };
+		A4FAE7441C0EFD2800DD593B /* ModuleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModuleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +311,9 @@
 				A4FAE7381C0ED6AD00DD593B /* StoreInfoCell.h */,
 				A4FAE7391C0ED6AD00DD593B /* StoreInfoCell.m */,
 				A4FAE73A1C0ED6AD00DD593B /* StoreInfoCell.xib */,
+				A4FAE7421C0EFD2800DD593B /* ModuleCell.h */,
+				A4FAE7431C0EFD2800DD593B /* ModuleCell.m */,
+				A4FAE7441C0EFD2800DD593B /* ModuleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,6 +407,7 @@
 				A49BFF961BF75E1200925CC6 /* Images.xcassets in Resources */,
 				A49D0AFB1BF8572D00D3AC29 /* MineCell.xib in Resources */,
 				A49BFFC21BF76CDA00925CC6 /* MineViewController.xib in Resources */,
+				A4FAE7461C0EFD2800DD593B /* ModuleCell.xib in Resources */,
 				A49D0B001BF85B7400D3AC29 /* SetVipInfoCell.xib in Resources */,
 				A4FAE73C1C0ED6AD00DD593B /* StoreInfoCell.xib in Resources */,
 			);
@@ -426,6 +435,7 @@
 				A49BFFC11BF76CDA00925CC6 /* MineViewController.m in Sources */,
 				A49D0AFF1BF85B7400D3AC29 /* SetVipInfoCell.m in Sources */,
 				A4FAE73B1C0ED6AD00DD593B /* StoreInfoCell.m in Sources */,
+				A4FAE7451C0EFD2800DD593B /* ModuleCell.m in Sources */,
 				A49D0B071BF8694300D3AC29 /* WebBaseViewController.m in Sources */,
 				A49BFFB41BF764A200925CC6 /* RootViewController.m in Sources */,
 				A49BFFB81BF769B900925CC6 /* EmployeeManager.m in Sources */,

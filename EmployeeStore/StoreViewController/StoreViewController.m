@@ -8,8 +8,15 @@
 
 #import "StoreViewController.h"
 #import "StoreInfoCell.h"
+#import "ModuleCell.h"
+
+#define ICON_WIDTH    45.f
+#define ICON_HEIGHT   45.f
 
 @interface StoreViewController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    UIImageView *_background;
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *storeTableView;
 
@@ -20,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.storeTableView.rowHeight = 68;
+    
 }
 
 
@@ -46,9 +53,28 @@
         storeCell.storeAddressLabel.text = @"上海";
         storeCell.userNameLabel.text = @"邓康";
         return storeCell;
+    }else if(indexPath.row == 1){
+        
+        static  NSString  *CellIdentiferId = @"ModuleCellId";
+        ModuleCell  *moduleCell = [tableView dequeueReusableCellWithIdentifier:CellIdentiferId];
+        if (moduleCell == nil) {
+            moduleCell = [[[NSBundle mainBundle]loadNibNamed:@"ModuleCell" owner:nil options:nil]lastObject];
+        };
+        return moduleCell;
+
+
     }
     return cell;
     
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        return 70.f;
+    }else if(indexPath.row ==1){
+        return 210.f;
+    }else{
+        return 0.1f;
+    }
 }
 
 @end
