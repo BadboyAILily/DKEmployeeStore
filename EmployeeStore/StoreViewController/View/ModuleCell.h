@@ -10,5 +10,22 @@
 
 @interface ModuleCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomLineHeight;
+@property (weak, nonatomic) IBOutlet UIImageView *productImage;
+@property (weak, nonatomic) IBOutlet UILabel *activityImage;
+@property (weak, nonatomic) IBOutlet UIImageView *companyImage;
+@property (weak, nonatomic) IBOutlet UIImageView *manageImage;
+@property (weak, nonatomic) IBOutlet UIImageView *accountImage;
+@property (weak, nonatomic) IBOutlet UILabel *myOrderImage;
+
+@property (weak, nonatomic) IBOutlet UIButton *productButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *activityButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *companyButton;
+@property (weak, nonatomic) IBOutlet UIButton *managerButton;
+@property (weak, nonatomic) IBOutlet UIButton *accountButton;
+@property (weak, nonatomic) IBOutlet UIButton *myOrderButton;
+
+@property (nonatomic,retain)NSArray *moduleButtonArr;
 
 @end

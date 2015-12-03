@@ -13,6 +13,7 @@
 - (void)awakeFromNib {
     // Initialization code
     self.bottomLineHeight.constant = 0.4;
+    self.moduleButtonArr = @[self.productButton,self.activityButton,self.companyButton,self.managerButton,self.accountButton,self.myOrderButton];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
