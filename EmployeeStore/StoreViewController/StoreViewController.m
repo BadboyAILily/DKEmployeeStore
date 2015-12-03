@@ -71,7 +71,7 @@
     if (indexPath.row == 0) {
         return 70.f;
     }else if(indexPath.row ==1){
-        return 210.f;
+        return 227.f;
     }else{
         return 0.1f;
     }
