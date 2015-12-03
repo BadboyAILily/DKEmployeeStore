@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A48455A01C100C880069D5A6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484559F1C100C880069D5A6 /* MobileCoreServices.framework */; };
+		A48455A21C100C960069D5A6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48455A11C100C960069D5A6 /* CFNetwork.framework */; };
+		A48455A41C100CAB0069D5A6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A48455A31C100CAB0069D5A6 /* libsqlite3.tbd */; };
+		A48455A61C100CB70069D5A6 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A48455A51C100CB70069D5A6 /* libstdc++.6.0.9.tbd */; };
+		A48455A81C100CC00069D5A6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A48455A71C100CC00069D5A6 /* libz.tbd */; };
+		A48455AA1C100CCC0069D5A6 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A48455A91C100CCC0069D5A6 /* libiconv.tbd */; };
+		A48455AC1C100CD70069D5A6 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A48455AB1C100CD70069D5A6 /* libresolv.tbd */; };
+		A48CD5281C10115F00C66A4E /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A48CD5271C10115F00C66A4E /* libresolv.dylib */; };
+		A48CD52A1C10116C00C66A4E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A48CD5291C10116C00C66A4E /* libiconv.dylib */; };
+		A48CD52C1C10117300C66A4E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A48CD52B1C10117300C66A4E /* libz.dylib */; };
+		A48CD52E1C10117C00C66A4E /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A48CD52D1C10117C00C66A4E /* libstdc++.6.0.9.dylib */; };
+		A48CD5301C10118500C66A4E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A48CD52F1C10118500C66A4E /* libsqlite3.dylib */; };
 		A49BFF8B1BF75E1200925CC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A49BFF8A1BF75E1200925CC6 /* main.m */; };
 		A49BFF8E1BF75E1200925CC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A49BFF8D1BF75E1200925CC6 /* AppDelegate.m */; };
 		A49BFF961BF75E1200925CC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49BFF951BF75E1200925CC6 /* Images.xcassets */; };
@@ -103,6 +115,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A484559F1C100C880069D5A6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A48455A11C100C960069D5A6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A48455A31C100CAB0069D5A6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A48455A51C100CB70069D5A6 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		A48455A71C100CC00069D5A6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A48455A91C100CCC0069D5A6 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A48455AB1C100CD70069D5A6 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		A48455AD1C100DA00069D5A6 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A48CD5271C10115F00C66A4E /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		A48CD5291C10116C00C66A4E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		A48CD52B1C10117300C66A4E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A48CD52D1C10117C00C66A4E /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		A48CD52F1C10118500C66A4E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A49BFF851BF75E1200925CC6 /* EmployeeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49BFF891BF75E1200925CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49BFF8A1BF75E1200925CC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -268,6 +293,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48CD5301C10118500C66A4E /* libsqlite3.dylib in Frameworks */,
+				A48CD52E1C10117C00C66A4E /* libstdc++.6.0.9.dylib in Frameworks */,
+				A48CD52C1C10117300C66A4E /* libz.dylib in Frameworks */,
+				A48CD52A1C10116C00C66A4E /* libiconv.dylib in Frameworks */,
+				A48CD5281C10115F00C66A4E /* libresolv.dylib in Frameworks */,
+				A48455AC1C100CD70069D5A6 /* libresolv.tbd in Frameworks */,
+				A48455AA1C100CCC0069D5A6 /* libiconv.tbd in Frameworks */,
+				A48455A81C100CC00069D5A6 /* libz.tbd in Frameworks */,
+				A48455A61C100CB70069D5A6 /* libstdc++.6.0.9.tbd in Frameworks */,
+				A48455A41C100CAB0069D5A6 /* libsqlite3.tbd in Frameworks */,
+				A48455A21C100C960069D5A6 /* CFNetwork.framework in Frameworks */,
+				A48455A01C100C880069D5A6 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +321,18 @@
 		A49BFF7C1BF75E1200925CC6 = {
 			isa = PBXGroup;
 			children = (
+				A48CD52F1C10118500C66A4E /* libsqlite3.dylib */,
+				A48CD52D1C10117C00C66A4E /* libstdc++.6.0.9.dylib */,
+				A48CD52B1C10117300C66A4E /* libz.dylib */,
+				A48CD5291C10116C00C66A4E /* libiconv.dylib */,
+				A48CD5271C10115F00C66A4E /* libresolv.dylib */,
+				A48455AB1C100CD70069D5A6 /* libresolv.tbd */,
+				A48455A91C100CCC0069D5A6 /* libiconv.tbd */,
+				A48455A71C100CC00069D5A6 /* libz.tbd */,
+				A48455A51C100CB70069D5A6 /* libstdc++.6.0.9.tbd */,
+				A48455A31C100CAB0069D5A6 /* libsqlite3.tbd */,
+				A48455A11C100C960069D5A6 /* CFNetwork.framework */,
+				A484559F1C100C880069D5A6 /* MobileCoreServices.framework */,
 				A49BFF871BF75E1200925CC6 /* EmployeeStore */,
 				A49BFFA11BF75E1200925CC6 /* EmployeeStoreTests */,
 				A49BFF861BF75E1200925CC6 /* Products */,
@@ -324,6 +373,7 @@
 			children = (
 				A49BFF891BF75E1200925CC6 /* Info.plist */,
 				A49BFF8A1BF75E1200925CC6 /* main.m */,
+				A48455AD1C100DA00069D5A6 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1022,9 +1072,25 @@
 					"$(PROJECT_DIR)/EmployeeStore/Tools/ShareSDK/Core",
 					"$(PROJECT_DIR)/EmployeeStore/Tools/ShareSDK",
 					"$(PROJECT_DIR)/EmployeeStore/Tools/ShareSDK/UI",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/3rdparty/Parse",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/3rdparty/Parse",
 				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/EmployeeStore/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = EmployeeStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/3rdparty/UMeng",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/3rdparty/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/3rdparty/VoiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/EaseMobSDK/lib",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/3rdparty/UMeng",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/3rdparty/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/3rdparty/VoiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/EaseMobSDK/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1039,9 +1105,25 @@
 					"$(PROJECT_DIR)/EmployeeStore/Tools/ShareSDK/Core",
 					"$(PROJECT_DIR)/EmployeeStore/Tools/ShareSDK",
 					"$(PROJECT_DIR)/EmployeeStore/Tools/ShareSDK/UI",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/3rdparty/Parse",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/3rdparty/Parse",
 				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/EmployeeStore/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = EmployeeStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/3rdparty/UMeng",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/3rdparty/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/3rdparty/VoiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/EmployeeStore/ThirdLibs/EaseMobLib/EaseMobSDK/lib",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/3rdparty/UMeng",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/3rdparty/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/3rdparty/VoiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/EmployeeStore/Tools/EaseMobLib/EaseMobSDK/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
